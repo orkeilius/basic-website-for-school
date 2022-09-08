@@ -1,0 +1,78 @@
+
+@font-face {
+font-family: "Monocraft";
+src: "Monocraft.otf"
+}
+
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    --menuColor:        #087E8B;
+    --menuColorHover:   #0b3954;
+    --footerColor:      #d4d6b9;
+    --choiceColor:      #a7c957;
+    --choiceColorHover: #a7c95777; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1{
+    text-align: left;
+    padding-left: 0.5em;
+}
+nav{
+    background: var(--menuColor);
+    display: flex;
+    justify-content: ;
+    height: 3em;
+}
+.navItem{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1em 0 1em;
+    transition: all 0.3s;  
+}
+.navItem:hover{
+    background: var(--menuColorHover);
+}
+
+article{
+    font-family: Monocraft;
+    flex-grow: 10;
+}
+#choiceList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.choice{
+    background: var(--choiceColorHover);
+    margin-bottom: 1em;
+    width: 200px;
+    transition: all 1s ease;
+}
+.choice:hover{
+    width: 400px;
+    background-color: var(--choiceColor) ;
+}
+
+
+
+
+footer{
+    position: relative;
+    background-color: var(--footerColor);
+    padding: 0.5em;
+}
