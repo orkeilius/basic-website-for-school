@@ -10,8 +10,11 @@ src: "Monocraft.otf"
     --menuColor:        #08aec0;
     --menuColorHover:   #11699c;
     --footerColor:      #d4d6b9;
-    --choiceColor:      #a7c957;
-    --choiceColorHover: #a7c95777; 
+
+    --endColor:         #60a4ff;
+    --endColorHover:    #60a4ff77;
+    --choiceColorHover: #a7c957;
+    --choiceColor:      #a7c95777; 
 }
 a{
     text-decoration: none;
@@ -57,6 +60,9 @@ article{
     font-family: monoCraft;   
     text-align: center; 
 }
+#end{
+    margin-top: 3em;
+}
 #choiceList{
     display: flex;
     flex-direction: column;
@@ -64,17 +70,21 @@ article{
     align-items: center;
 }
 .choice{
-    background: var(--choiceColorHover);
+    background: var(--choiceColor);
     margin-bottom: 1em;
     padding: 0 0.5em;
     transition: all 0.5s ease-in-out;
 }
 .choice:hover{
     padding: 0 3em;
-    background-color: var(--choiceColor) ;
+    background-color: var(--choiceColorHover) ;
 }
-
-
+#choiceEnd{
+    background: var(--endColor);
+}
+#choiceEnd:hover{
+    background: var(--endColorHover);
+}
 
 
 footer{
