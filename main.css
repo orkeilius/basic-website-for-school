@@ -11,10 +11,10 @@ src: "Monocraft.otf"
     --menuColorHover:   #11699c;
     --footerColor:      #d4d6b9;
 
-    --endColor:         #60a4ff;
-    --endColorHover:    #60a4ff77;
-    --choiceColorHover: #a7c957;
+    --endColor:         #60a4ff77;
+    --endColorHover:    #60a4ff;
     --choiceColor:      #a7c95777; 
+    --choiceColorHover: #a7c957;
 }
 a{
     text-decoration: none;
