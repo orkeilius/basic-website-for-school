@@ -1,27 +1,27 @@
-
 @font-face {
-font-family: "Monocraft";
-src: "Monocraft.otf"
+    font-family: "Monocraft";
+    src: "Monocraft.otf"
 }
 
-:root{
+:root {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    --menuColor:        #08aec0;
-    --menuColorHover:   #11699c;
-    --footerColor:      #d4d6b9;
+    --menuColor: #08aec0;
+    --menuColorHover: #11699c;
+    --footerColor: #d4d6b9;
 
-    --endColor:         #60a4ff77;
-    --endColorHover:    #60a4ff;
-    --choiceColor:      #a7c95777; 
+    --endColor: #60a4ff77;
+    --endColorHover: #60a4ff;
+    --choiceColor: #a7c95777;
     --choiceColorHover: #a7c957;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
 
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -29,73 +29,86 @@ body{
 }
 
 
-h1{
+h1 {
     text-align: left;
     padding-left: 0.5em;
 }
-nav{
+
+nav {
     position: sticky;
     top: 0%;
     background: var(--menuColor);
     display: flex;
     height: 3em;
+    z-index: 1;
 }
-.navItem{
+
+.navItem {
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0 1em 0 1em;
-    transition: all 0.3s;  
+    transition: all 0.3s;
 }
-.navItem:hover{
+
+.navItem:hover {
     background: var(--menuColorHover);
 }
 
-article{
+article {
     font-family: "Monocraft";
     flex-grow: 10;
     margin: 1em;
 }
-#storyPage{
-    font-family: monoCraft;   
-    text-align: center; 
+
+#storyPage {
+    font-family: monoCraft;
+    text-align: center;
 }
-#end{
+
+#end {
     margin-top: 3em;
 }
-#choiceList{
+
+#choiceList {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.choice{
+
+.choice {
     background: var(--choiceColor);
     margin-bottom: 1em;
     padding: 0 0.5em;
     transition: all 0.5s ease-in-out;
 }
-.choice:hover{
+
+.choice:hover {
     padding: 0 3em;
-    background-color: var(--choiceColorHover) ;
+    background-color: var(--choiceColorHover);
 }
-#choiceEnd{
+
+#choiceEnd {
     background: var(--endColor);
 }
-#choiceEnd:hover{
+
+#choiceEnd:hover {
     background: var(--endColorHover);
 }
 
 
-footer{
+footer {
     position: relative;
     background-color: var(--footerColor);
     padding: 0.5em;
 }
-footer>em{
+
+footer>em {
     font-size: medium;
     transition: all 1s;
 }
-footer>em:hover{
+
+footer>em:hover {
     font-size: x-large;
 }
