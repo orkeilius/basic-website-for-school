@@ -58,7 +58,7 @@ nav {
 article {
     font-family: "Monocraft";
     flex-grow: 10;
-    margin: 1em;
+    margin: 1em 0.5em;
 }
 
 #storyPage {
